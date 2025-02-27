@@ -1,12 +1,15 @@
 % !TeX root = ./academic_cv.tex
+% The list of supported icons available at: https://sunsite.icm.edu.pl/pub/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf
 
-\newcommand\horizontalSpaceItems{8pt}
+% Include author's data
+\input{../data/00_main.tex}
+
+\newcommand\hSpaceLen{4pt}
 
 \begin{center}
     \textbf{\bioName}
     \bioHeader\\
-    e-mail: \bioEmailUrl \hspace{\horizontalSpaceItems} phone: \bioPhoneUrl \hspace{\horizontalSpaceItems} url: \bioHomepageUrl \hspace{\horizontalSpaceItems} orcid: \bioOrcidUrl \\
-    linkedin: \bioLinkedInUrl \hspace{\horizontalSpaceItems} researchgate: \bioResearchGateUrl \hspace{\horizontalSpaceItems} github: \bioGitHubUrl
-    \\
+    \faIcon{envelope} \bioEmailUrl{} \hspace{\hSpaceLen} \faIcon{mobile} \bioPhoneUrl{} \hspace{\hSpaceLen} \faIcon{map-marker-alt} \bioLocation{} \ifx\positionLocation\undefined (*willing to relocate) \else (*applying to \positionLocation{}) \fi \\
+    \faIcon{orcid} \bioOrcidUrl{} \hspace{\hSpaceLen} \faIcon[regular]{researchgate} \bioResearchGateUrl{} \hspace{\hSpaceLen} \faIcon{linkedin} \bioLinkedInUrl{} \hspace{\hSpaceLen} \faIcon{github} \bioGitHubUrl{} \\
     \hrulefill
 \end{center}
