@@ -1,0 +1,70 @@
+% Basic LaTeX academic CV template. The root file.
+% Copyright (c) 2025 Mariusz Matusiak <mariusz.m.matusiak@gmail.com>
+
+% Define base document class, paper size and margins
+\documentclass[10pt, a4paper]{article}
+
+% Include additional packages
+% \usepackage{graphicx}   % graphics
+% \usepackage{amsmath}    % equations
+\usepackage[hidelinks]{hyperref} % hyperlinks with no highlights
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage[backend=biber,defernumbers=true,sorting=ydnt]{biblatex} % BibLaTeX
+\usepackage[left=1cm,top=1cm,right=1cm,bottom=1cm]{geometry} % page layout
+\usepackage{enumitem} % additional items customization
+\usepackage[fixed]{fontawesome5} % optional graphics
+\usepackage{pdfpages} % to include other docs with \includepdf
+\usepackage{multicol} % used to split content into two columns
+\usepackage{ragged2e} % used to justify block of text
+\usepackage{pgffor}   % used to foreach statement
+\usepackage[skip=1pt]{parskip}  % used to remove the default paragraph indent and set vertical space globally
+\usepackage{tabularx} % used to create tables fitting the entire page
+
+% Add bibliography
+\addbibresource{../data/bibliography/bibliography.bib} % BibLaTeX
+
+% Include global data
+\input{../data/12_recipients.tex}
+
+% Define vertical spaces lengths
+\newcommand\spaceSection{12pt}
+\newcommand\spaceItems{4pt}
+\newcommand\spaceSubitems{4pt}
+
+\begin{document}
+
+% The TOP HEADER section
+\input{00_header.tex}
+
+% The EDUCATION section
+\input{01_education.tex}
+
+% The PROFESSIONAL EXPERIENCE section
+\input{02_experience.tex}
+
+% The TEACHING EXPERIENCE section
+\input{03_lectures.tex}
+
+% The SKILLS section
+\input{04_skills.tex}
+
+% The GRANTS & AWARDS section
+\input{05_awards.tex}
+
+% The COURSES & CERTIFICATIONS section
+\input{06_courses.tex}
+
+% The SIDE PROJECTS section
+\input{07_sideprojects.tex}
+
+% The VOLUNTEERING ACTIVITIES section
+\input{08_volunteering.tex}
+
+% The PUBLICATIONS subsections
+\input{09_publications.tex}
+
+% The REFERENCES section
+\input{10_references.tex}
+
+\end{document}

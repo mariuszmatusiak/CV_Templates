@@ -1,12 +1,22 @@
+# CMake ignores
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
 Testing
-Makefile
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
 CMakeUserPresets.json
+
+# Dir ignores
+output/
+output_/
+
+# PDF files
+# *.pdf
+
+#MacOS ignores
+.DS_Store
