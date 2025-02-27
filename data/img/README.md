@@ -1,0 +1,1 @@
+A directory to store photos, in case needed in a resume.
