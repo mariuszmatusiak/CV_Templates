@@ -1,8 +1,11 @@
 # Templates for industry resumes, academic CVs and cover letters.
 
-To be used for creating resumes, academic CVs and cover letters with sharing and updating the same data among all the documents.
+To be used for creating resumes, academic CVs and cover letters (so-called ATS-friendly) with sharing and updating the same data among all the documents.
 
 Copyright (c) 2025 Mariusz Matusiak <mariusz.m.matusiak@gmail.com>
+
+I'm a coffee-driven being who combines the power of neurons and caffeine in order to develop new technologies and solutions.
+If you like my work, you can support its future by sending me an [espresso injection](https://paypal.me/MMatk).
 
 ## Content
 
@@ -10,7 +13,7 @@ Copyright (c) 2025 Mariusz Matusiak <mariusz.m.matusiak@gmail.com>
 - `industry/` - a directory with a root resume.tex file including smaller section-specific .tex files to create an industry resume,
 - `cover_letter/` - a directory with a root letter.tex file including smaller section-specific .tex files to create a cover letter,
 - `data/` - a directory with section-specific .tex files containing common shared data of an Applicant, including:
-    - `bibliography/` - a directory with BibLaTeX bibliograhy files,
+    - `bibliography/` - a directory with BibLaTeX bibliography files,
     - `img/` - a directory to store Applicant's photos (optional, check hiring preferences in your field and location)
 - `.vscode/` - a directory with handy VS Code configuration files.
 
@@ -36,9 +39,15 @@ to create all documents at once.
 ```shell
 make academic
 ``` 
-to create academic CV.
+to create the academic CV.
 
 5. Run:
+```shell
+make letter
+``` 
+to create the cover letter.
+
+6. Run:
 ```shell
 make clean
 ```
@@ -46,6 +55,8 @@ to delete all generated files and output_/ directories.
 
 ## Changelog
 
+### v0.2.0 [2025-02-28]
+- Added support for cover letter. 
 ### v0.1.0 [2025-02-27]
 - Added support for academic CV. 
 

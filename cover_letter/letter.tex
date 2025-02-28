@@ -1,0 +1,46 @@
+% Basic LaTeX academic cover letter. The root file. 
+% Copyright (c) 2025 Mariusz Matusiak <mariusz.m.matusiak@gmail.com>
+
+% Define base document class, paper size and margins
+\documentclass{letter}
+
+% Include additional packages
+\usepackage{graphicx}   % graphics
+\usepackage{amsmath}    % equations
+\usepackage[hidelinks]{hyperref} % hyperlinks with no highlights
+\usepackage[top=2cm, left=2.75cm, right=2.75cm, bottom=2cm]{geometry} % page layout
+\usepackage{pdfpages} % to include other docs with \includepdf
+\usepackage{lipsum}   % to generate some dummy text
+
+\signature{\bioName}
+\address{\bioName\\\bioStreet\\\bioLocation\\\bioPhoneUrl\\\bioEmailUrl}
+\pagenumbering{gobble}
+
+\input{../data/00_main.tex}
+\input{../data/12_recipients.tex}
+\input{../data/05_proudof.tex}
+\input{../data/10_references.tex}
+
+\begin{document}
+
+\date{\today}
+
+\begin{letter}{\recipient \\ \recipientAddress}
+
+\opening{Dear \recipient{} Team,}
+
+I am writing to express my keen interest in the \textbf{\positionName{}} role at \positionCompany{}. 
+I am a huge enthusiast of cutting-edge technologies in honey production, and have a strong 100+ years' experience in honey acquisition, preparation, brewing, and most importantly, consuming.
+
+\lipsum[2-4] % <- provide the text of your cover letter here instead
+
+Thank you for your time and consideration. 
+
+\vspace{4pt}
+
+Yours sincerely,
+
+\bioName
+
+\end{letter}
+\end{document}
