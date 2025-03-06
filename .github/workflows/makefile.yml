@@ -24,7 +24,7 @@ jobs:
           cover_letter/letter.tex
         work_in_root_file_dir: true
 
-    - name: Generate files using Makefile
-      uses: dante-ev/latex-action@latest
-      with:
-        entrypoint: make
+    # - name: Generate files using Makefile
+    #   uses: dante-ev/latex-action@latest
+    #   with:
+    #     entrypoint: make
