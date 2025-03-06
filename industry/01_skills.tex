@@ -1,0 +1,16 @@
+% !TeX root = ./resume.tex
+
+\input{../data/04_skills.tex}
+\input{../data/11_languages.tex}
+
+\vspace{\spaceBeforeSection}
+\textbf{SKILLS} \hrulefill
+\vspace{\spaceAfterSection}
+
+\textbf{Programming:} \foreach \skill / \cvtarget in \allProgrammingSkills {\if\cvtarget1{\skill} $\cdot$ \fi}
+
+\textbf{Hardware:} \foreach \skill / \cvtarget in \allHardwareSkills {\if\cvtarget1{{\skill}} $\cdot$ \fi}
+
+\textbf{Other:} \foreach \skill / \cvtarget in \allOtherSkills {\if\cvtarget1{{\skill}} $\cdot$ \fi} \foreach \skill / \cvtarget in \allSoftSkills {\if\cvtarget1{{\skill}} $\cdot$ \fi}
+
+\textbf{Languages:} \languageA{} \languageADesc{} $\cdot$ \languageB{} \languageBDesc{} $\cdot$ \languageC{} \languageCDesc{}

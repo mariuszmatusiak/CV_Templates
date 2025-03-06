@@ -1,0 +1,65 @@
+% Basic LaTeX resume template. The root file.
+% Copyright (c) 2025 Mariusz Matusiak <mariusz.m.matusiak@gmail.com>
+
+% Define base document class, paper size and margins
+\documentclass[10pt, a4paper]{article}
+
+% Include additional packages
+% \usepackage{graphicx}   % graphics
+% \usepackage{amsmath}    % equations
+\usepackage[hidelinks]{hyperref} % hyperlinks with no highlights
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage[backend=biber,defernumbers=true,sorting=ydnt]{biblatex} % BibLaTeX
+\usepackage[left=1cm,top=1cm,right=1cm,bottom=1cm]{geometry} % page layout
+\usepackage{enumitem} % additional items customization
+\usepackage[fixed]{fontawesome5} % optional graphics
+\usepackage{pdfpages} % to include other docs with \includepdf
+\usepackage{paracol}  % used to split content into two columns
+\usepackage{multicol} % used to span content over more columns
+\usepackage{multirow} % used to span content over more rows
+\usepackage{ragged2e} % used to justify block of text
+\usepackage{pgffor}   % used for foreach statement
+\usepackage[skip=1pt]{parskip}  % used to remove the default paragraph indent and set vertical space globally
+\usepackage{tabularx} % used to create tables fitting the entire page
+
+% Add bibliography
+\addbibresource{../data/bibliography/bibliography.bib} % BibLaTeX
+
+% Include recipients' global data
+\input{../data/12_recipients.tex}
+
+% Define vertical spaces lengths
+\newcommand\spaceBeforeSection{8pt}
+\newcommand\spaceAfterSection{6pt}
+\newcommand\spaceItems{3pt}
+\newcommand\spaceSubitems{3pt}
+
+\begin{document}
+
+% The TOP HEADER section
+\input{00_header.tex}
+
+% The SKILLS section
+\input{01_skills.tex}
+
+% The EXPERIENCE section
+\input{02_experience.tex}
+
+% The SIDE PROJECTS section
+\input{03_sideprojects.tex}
+
+% The EDUCATION section
+\input{04_education.tex}
+
+% The CERTS AND COURSES and PROUD OF sections in parallel
+\begin{paracol}{2}[]
+    \input{05_certsandcourses.tex}
+    \switchcolumn
+    \input{06_proudof.tex}
+\end{paracol}
+
+% The SELECTED PUBLICATIONS section
+\input{07_publications.tex}
+
+\end{document}
