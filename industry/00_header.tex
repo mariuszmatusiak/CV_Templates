@@ -1,0 +1,35 @@
+% !TeX root = ./resume.tex
+
+% Include author's data
+\input{../data/00_main.tex}
+
+\newcommand\hSpaceLen{4pt}
+\newcommand\vSpaceLen{6pt}
+
+\begin{paracol}{2}[]
+    \textbf{\huge{\bioName}}
+    \switchcolumn
+    \bioHeader
+\end{paracol}
+% OR
+% \begin{tabular}{ m{0.45\textwidth} m{0.55\textwidth} }
+%     \multirow{2}{*}{\textbf{\huge{\bioName}}} & \bioHeader
+% \end{tabular}
+
+\vspace{\vSpaceLen}
+
+\begin{center}
+    \faIcon{envelope} \bioEmailUrl{} \hspace{\hSpaceLen} \faIcon{mobile} \bioPhoneUrl{} \hspace{\hSpaceLen} \faIcon{globe} \bioHomepageUrl{}
+    % \faIcon{map-marker-alt} \bioLocation{} \ifx\positionLocation\undefined (*willing to relocate) \else (*applying to \positionLocation{}) \fi 
+    \\ \faIcon{orcid} \bioOrcidUrl{} \hspace{\hSpaceLen} \faIcon[regular]{researchgate} \bioResearchGateUrl{} \hspace{\hSpaceLen} \faIcon{linkedin} \bioLinkedInUrl{} \hspace{\hSpaceLen} \faIcon{github} \bioGitHubUrl{} \\
+
+    \vspace{\vSpaceLen}
+
+    \begin{justify}
+    \textit{\bioSummary{} Willing to relocate. Looking forward to facing new challenges at \positionCompany{} in \positionLocation{} as a \positionName{}.}
+    \end{justify}
+\end{center}
+
+
+
+    

@@ -39,7 +39,13 @@ to create all documents at once.
 ```shell
 make academic
 ``` 
-to create the academic CV.
+to create the academic CV (long).
+
+4. Run:
+```shell
+make industry
+``` 
+to create the industry resume (short).
 
 5. Run:
 ```shell
@@ -55,6 +61,8 @@ to delete all generated files and output_/ directories.
 
 ## Changelog
 
+### v0.3.0 [2025-03-06]
+- Added support for industry resume. 
 ### v0.2.0 [2025-02-28]
 - Added support for cover letter. 
 ### v0.1.0 [2025-02-27]
