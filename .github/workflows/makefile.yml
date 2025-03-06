@@ -1,4 +1,4 @@
-name: Generate all files using Makefile
+name: Generate all files
 
 on:
   push:
@@ -15,12 +15,16 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Github Action for LaTeX
+    - name: Generate files independently using LaTeX docker
       uses: xu-cheng/latex-action@3.2.0
       with:
         root_file: |
-          resume.tex
-        working_directory: industry/
+          industry/resume.tex
+          academic/academic_cv.tex
+          cover_letter/letter.tex
+        work_in_root_file_dir: true
 
-    - name: Generate all files
-      run: make
+    - name: Generate files using Makefile
+      uses: dante-ev/latex-action@latest
+      with:
+        entrypoint: make
