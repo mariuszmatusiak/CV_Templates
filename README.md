@@ -61,6 +61,8 @@ to delete all generated files and output_/ directories.
 
 ## Changelog
 
+### v1.0.1 [2025-03-09]
+- Updated Makefile with additional optional arguments.
 ### v0.3.0 [2025-03-06]
 - Added support for industry resume. 
 ### v0.2.0 [2025-02-28]
