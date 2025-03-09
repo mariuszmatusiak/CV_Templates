@@ -20,3 +20,6 @@ output_/
 
 #MacOS ignores
 .DS_Store
+
+# Default directory of output files
+CVs/
