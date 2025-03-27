@@ -17,6 +17,8 @@ If you like my work, you can support its future by sending me an [espresso injec
     - `img/` - a directory to store Applicant's photos (optional, check hiring preferences in your field and location)
 - `.vscode/` - a directory with handy VS Code configuration files.
 
+You are free to add your own folder with another LaTeX template. Using commands defined in `data/*.tex` files shall speed-up filling up the new document.
+
 ## Prerequisites
 
 - installed LaTeX distribution
