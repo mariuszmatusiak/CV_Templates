@@ -17,6 +17,8 @@ If you like my work, you can support its future by sending me an [espresso injec
     - `img/` - a directory to store Applicant's photos (optional, check hiring preferences in your field and location)
 - `.vscode/` - a directory with handy VS Code configuration files.
 
+You are free to add your own folder with another LaTeX template. Using commands defined in `data/*.tex` files shall speed-up filling up the new document.
+
 ## Prerequisites
 
 - installed LaTeX distribution
@@ -73,3 +75,21 @@ to delete all generated files and output_/ directories.
 ## Acknowledgments
 
 Icons provided by: "Font Awesome by Dave Gandy - http://fontawesome.io" and ported to a [LaTeX package](https://ctan.org/pkg/fontawesome5) by Marcel Krueger. Kudos to [Font Awesome Team](https://github.com/orgs/FortAwesome/people).
+
+## License
+
+CV Templates
+Copyright (C) 2025  Mariusz Matusiak <mariusz.m.matusiak@gmail.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
