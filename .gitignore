@@ -23,3 +23,8 @@ output_/
 
 # Default directory of output files
 CVs/
+
+# Constantly changed file
+data/04_skills.tex
+
+*.bak

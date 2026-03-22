@@ -2,7 +2,7 @@
 
 To be used for creating resumes, academic CVs and cover letters (so-called ATS-friendly) with sharing and updating the same data among all the documents.
 
-Copyright (c) 2025 Mariusz Matusiak <mariusz.m.matusiak@gmail.com>
+Copyright (c) 2026 Mariusz Matusiak <coffeedrivenengineer@gmail.com>
 
 I'm a coffee-driven being who combines the power of neurons and caffeine in order to develop new technologies and solutions.
 If you like my work, you can support its future by sending me an [espresso injection](https://paypal.me/MMatk).
@@ -40,19 +40,19 @@ to create all documents at once.
 4. Run:
 ```shell
 make academic
-``` 
+```
 to create the academic CV (long).
 
 4. Run:
 ```shell
 make industry
-``` 
+```
 to create the industry resume (short).
 
 5. Run:
 ```shell
 make letter
-``` 
+```
 to create the cover letter.
 
 6. Run:
@@ -63,14 +63,16 @@ to delete all generated files and output_/ directories.
 
 ## Changelog
 
+### v1.1.0 [2026-03-22]
+- Refactored, comments updated.
 ### v1.0.1 [2025-03-09]
 - Updated Makefile with additional optional arguments.
 ### v0.3.0 [2025-03-06]
-- Added support for industry resume. 
+- Added support for industry resume.
 ### v0.2.0 [2025-02-28]
-- Added support for cover letter. 
+- Added support for cover letter.
 ### v0.1.0 [2025-02-27]
-- Added support for academic CV. 
+- Added support for academic CV.
 
 ## Acknowledgments
 
@@ -79,7 +81,7 @@ Icons provided by: "Font Awesome by Dave Gandy - http://fontawesome.io" and port
 ## License
 
 CV Templates
-Copyright (C) 2025  Mariusz Matusiak <mariusz.m.matusiak@gmail.com>
+Copyright (C) 2026  Mariusz Matusiak <coffeedrivenengineer@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
